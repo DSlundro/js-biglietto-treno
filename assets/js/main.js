@@ -1,10 +1,21 @@
 // quanti km vuoi percorrere?
 const km_da_percorrere = prompt('Quanti km vuoi percorrere?');
-console.log('Hai inserito ' + km_da_percorrere + ' km');
+if (km_da_percorrere > 0) {
+    console.log('Hai inserito ' + km_da_percorrere + ' km');
+} else {
+    false;
+    alert('ERRORE: Inserisci i km da percorrere');
+}
 
 // quanti anni hai?
 const età = prompt('Quanti anni hai?');
-console.log('Hai inserito ' + età + ' anni');
+if (età > 0) {
+    console.log('Hai inserito ' + età + ' anni');
+} else {
+    false;
+    alert('ERRORE: Inserisci la tua età');
+}
+
 //prezzo del biglietto - 0.21 € al km
 const prezzo_biglietto = km_da_percorrere * 0.21;
 
