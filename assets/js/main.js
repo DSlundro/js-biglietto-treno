@@ -32,8 +32,10 @@ if (età < 18 && età > 0) {
 } else if (età > 65) {
     console.log(prezzo_biglietto.toFixed(2) + ' €');
     console.log(prezzo_over_65.toFixed(2) + ' € prezzo scontato per gli over 65');
-} else {
+} else if (età >= 18 || età <= 65) {
     console.log(prezzo_biglietto.toFixed(2) + ' €');
+} else {
+    false
 }
 
 
